@@ -1,5 +1,5 @@
 provider "aws" {
-  alias = "ssm"
+  alias   = "ssm"
   profile = "<profile>"
   region  = "us-east-1"
 }

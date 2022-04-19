@@ -14,15 +14,61 @@ terraform {
   }
 }
 
-data "aws_caller_identity" "current" {}
+resource "aws_iam_policy" "deployer" {
+  name        = "github-deployer-policy"
+  description = "Github Deployer"
+
+  policy = <<EOT
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "eks:DescribeCluster",
+                "eks:ListClusters"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+EOT
+}
 
 
 module "users" {
-  source         = "github.com/opszero/iam/aws"
-  prefix         = "<Company>"
-  aws_account_id = data.aws_caller_identity.current.account_id
+  source = "github.com/opszero/terraform-aws-mrmgr"
+
+  github = {
+    "deployer" = {
+      org = ""
+      repos = [
+        "reponame"
+      ]
+      policy_arns = [aws_iam_policy.deployer.arn]
+    }
+  }
+
+  groups = {
+    "Admin" = {
+      policy_arns = [
+        "arn:aws:iam::aws:policy/AdministratorAccess"
+      ]
+      enable_mfa = true
+    }
+  }
 
   users = {
-    "opszero" = ["administrators"]
-  }
+    "opszero" = {
+      groups = [
+        "Admin"
+      ]
+    }
 }

@@ -12,6 +12,9 @@ as Terraform
  - `secrets`: Store and manage secrets.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
+   - `<environment>`: The individual environments.
+   - `shared/<shared>`: Shared Terraform ~modules~ used by the environments
+   - `common/<common>`: Common Terraform ~resources~ used across environments.
 
 ## Makefile
 

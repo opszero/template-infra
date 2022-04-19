@@ -8,11 +8,16 @@ as Terraform
 ## Structure
 
  - `iam`: Setup IAM & SSO access to clusters.
+   - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr)
  - `dns`: DNS and Cloudflare Access
  - `secrets`: Store and manage secrets.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
    - `<environment>`: The individual environments.
+     - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot)
+     - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot)
+     - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot)
+     - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot)
    - `shared/<shared>`: Shared Terraform ~modules~ used by the environments
    - `common/<common>`: Common Terraform ~resources~ used across environments.
 
@@ -48,8 +53,6 @@ Closes #99
 
 Docs: https://help.github.com/articles/closing-issues-using-keywords/
 
-# Environments
-
-## Checklists
+# Checklists
 
  - [ ] Ensure CIDR Blocks Don't Conflict

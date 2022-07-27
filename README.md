@@ -33,7 +33,7 @@ Contact opsZero support:
 
  - `make fmt`: Run `terraform fmt`
 
-# Git & Github
+## Git & Github
 
 Make branches and work on the branches.
 
@@ -47,8 +47,6 @@ git push origin <branch>
 gh pr create # Or create a Pull request on the Github repo
 ```
 
-## Pull Requests
-
 Pull requests are created frequently and often to ensure timely feedback.
 Pull requests should reference the Issue that is to be closed. Say you are closing
 https://github.com/opszero/template-infra/issues/99
@@ -61,35 +59,31 @@ Closes #99
 
 Docs: https://help.github.com/articles/closing-issues-using-keywords/
 
-# Code Review Checklists
+### Pull Request Checklist
 
-
-# Pull Request
-
-Checklist when reviewing Pull Requests
-
-## Cloud
+#### Cloud
 
  - [ ] Are the Regions Consistent? Make sure that everything is in the same
        region. Example, us-west-2 and that regions aren't mixed unless you are
        deploying to different regions.
  - [ ] Ensure CIDR Blocks Don't Conflict
 
-## Docs
+#### Docs
 
  - [ ] Is the README.md updated?
 
-## Style
+#### Style
 
  - [ ] Remove Trailing Whitespace
 
-### Terraform
+#### Terraform
 
+ - [ ] `terraform fmt`
  - [ ] Files should have underscores. Example, `cloud_file.tf` NOT `cloud-file.tf`
  - [ ] Resources should have underscores. `resource "aws_ec2_instance" "analytics_bastion"`
  - [ ] Modules should have dashes. `module "analytics-bastion"`
 
-### Helm
+#### Helm
 
  - [ ] Prefer `helm upgrade --install` to `helm install`
  - [ ] Put charts in the `charts` directory.
@@ -105,7 +99,7 @@ Checklist when reviewing Pull Requests
  - [ ] Are values.yml in the correct place?
 
 
-### Github Actions
+#### Github Actions
 
  - [ ] AWS
    - [ ] Is the AWS Account ID Correct?

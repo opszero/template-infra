@@ -1,6 +1,7 @@
 # Infra
 
 ![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/opszero/template-infra)
 
 opsZero uses this Infrastructure as Code template used by opsZero. It sets up a common directory
 structure for IAM, DNS, Secrets, and Environments. All code is kept primarily

@@ -19,7 +19,7 @@ different terraform modules.
  - `secrets`: Store and manage secrets.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
-   - `<environment>`: The individual environments.
+   - `<environment>`: Individual environments. e.g prod, dev, staging.
      - Bastion
        - [terraform-aws-bastion](https://github.com/opszero/terraform-aws-bastion). AWS Bastion / Instance with EC2 Instance Connect
      - Kubernetes

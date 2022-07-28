@@ -12,7 +12,7 @@ different terraform modules.
 
  - `edge`: DNS and Cloudflare Access
    - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
- - `iam`: Setup IAM & SSO access to the Cloud, Bastion and Clusters.
+ - `iam`: Setup Cloud level IAM and Access.
    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
@@ -20,10 +20,13 @@ different terraform modules.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
    - `<environment>`: The individual environments.
-     - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot). AWS Configuration
-     - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
-     - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
-     - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
+     - Bastion
+      - [terraform-aws-bastion](https://github.com/opszero/terraform-aws-bastion). AWS Bastion / Instance with EC2 Instance Connect
+     - Kubernetes
+      - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot). AWS Configuration
+      - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
+      - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
+      - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
    - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
    - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 

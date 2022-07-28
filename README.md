@@ -1,22 +1,20 @@
 # Infra
 
-Infrastructure as code template used by opsZero. It sets up a common directory
-structure for IAM, DNS, Secrets, and Environments. All code is kept primarily
-as Terraform
+![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/opszero/template-infra)
 
-## Support
-
-Contact opsZero support:
-
- - [Helpdesk](https://support.opszero.com)
- - Shared Slack
+opsZero uses Infrastructure as Code to build all infrastructure. The directory
+structure contains everything needed to run the entire Cloud infrastructure from
+DNS to IAM to the Cloud. The way different components are used is through
+different terraform modules.
 
 ## Structure
 
- - `iam`: Setup IAM & SSO access to clusters.
+ - `edge`: DNS and Cloudflare Access
+   - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
+ - `iam`: Setup IAM & SSO access to the Cloud, Bastion and Clusters.
    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
- - `dns`: DNS and Cloudflare Access
- - `monitoring`: Monitoring and Paging Configuration
+ - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
  - `secrets`: Store and manage secrets.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
@@ -26,8 +24,8 @@ Contact opsZero support:
      - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
      - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
      - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
-   - `shared/<shared>`: Shared Terraform ~modules~ used by the environments
-   - `common/<common>`: Common Terraform ~resources~ used across environments.
+   - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
+   - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 
 ## Makefile
 
@@ -115,3 +113,11 @@ Docs: https://help.github.com/articles/closing-issues-using-keywords/
       ECR_REGISTRY: 123456.dkr.ecr.us-west-2.amazonaws.com
       ECR_REPOSITORY: datascience
  ```
+
+## Support
+
+Contact opsZero support:
+
+ - [Docs](https://docs.opszero.com)
+ - [Helpdesk](https://support.opszero.com)
+ - Shared Slack

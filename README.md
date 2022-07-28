@@ -8,6 +8,12 @@ structure contains everything needed to run the entire Cloud infrastructure from
 DNS to IAM to the Cloud. The way different components are used is through
 different terraform modules.
 
+opsZero support:
+
+ - [Docs](https://docs.opszero.com)
+ - [Helpdesk](https://support.opszero.com)
+ - Shared Slack
+
 ## Structure
 
  - `edge`: DNS and Cloudflare Access
@@ -116,11 +122,3 @@ Docs: https://help.github.com/articles/closing-issues-using-keywords/
       ECR_REGISTRY: 123456.dkr.ecr.us-west-2.amazonaws.com
       ECR_REPOSITORY: datascience
  ```
-
-## Support
-
-Contact opsZero support:
-
- - [Docs](https://docs.opszero.com)
- - [Helpdesk](https://support.opszero.com)
- - Shared Slack

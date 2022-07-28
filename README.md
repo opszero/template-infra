@@ -21,12 +21,12 @@ different terraform modules.
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
    - `<environment>`: The individual environments.
      - Bastion
-      - [terraform-aws-bastion](https://github.com/opszero/terraform-aws-bastion). AWS Bastion / Instance with EC2 Instance Connect
+       - [terraform-aws-bastion](https://github.com/opszero/terraform-aws-bastion). AWS Bastion / Instance with EC2 Instance Connect
      - Kubernetes
-      - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot). AWS Configuration
-      - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
-      - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
-      - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
+       - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot). AWS Configuration
+       - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
+       - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
+       - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
    - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
    - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 

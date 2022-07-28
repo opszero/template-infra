@@ -3,22 +3,17 @@
 ![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)
 ![GitHub Issues](https://img.shields.io/github/issues/opszero/template-infra)
 
-opsZero uses this Infrastructure as Code template used by opsZero. It sets up a common directory
-structure for IAM, DNS, Secrets, and Environments. All code is kept primarily
-as Terraform
-
-## Support
-
-Contact opsZero support:
-
- - [Helpdesk](https://support.opszero.com)
- - Shared Slack
+opsZero uses Infrastructure as Code to build all infrastructure. The directory
+structure contains everything needed to run the entire Cloud infrastructure from
+DNS to IAM to the Cloud. The way different components are used is through
+different terraform modules.
 
 ## Structure
 
  - `iam`: Setup IAM & SSO access to clusters.
    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
- - `dns`: DNS and Cloudflare Access
+ - `edge`: DNS and Cloudflare Access
+   - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `monitoring`: Monitoring and Paging Configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
  - `secrets`: Store and manage secrets.
@@ -118,3 +113,11 @@ Docs: https://help.github.com/articles/closing-issues-using-keywords/
       ECR_REGISTRY: 123456.dkr.ecr.us-west-2.amazonaws.com
       ECR_REPOSITORY: datascience
  ```
+
+## Support
+
+Contact opsZero support:
+
+ - [Docs](https://docs.opszero.com)
+ - [Helpdesk](https://support.opszero.com)
+ - Shared Slack

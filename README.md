@@ -10,10 +10,10 @@ different terraform modules.
 
 ## Structure
 
- - `iam`: Setup IAM & SSO access to the Cloud, Bastion and Clusters.
-   - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `edge`: DNS and Cloudflare Access
    - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
+ - `iam`: Setup IAM & SSO access to the Cloud, Bastion and Clusters.
+   - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
  - `secrets`: Store and manage secrets.

@@ -14,7 +14,7 @@ different terraform modules.
    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `edge`: DNS and Cloudflare Access
    - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
- - `monitoring`: Monitoring and Paging Configuration
+ - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
  - `secrets`: Store and manage secrets.
    - `ssm`: Store secrets in AWS Systems Manager Parameter Store
@@ -24,8 +24,8 @@ different terraform modules.
      - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
      - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
      - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
-   - `shared/<shared>`: Shared Terraform ~modules~ used by the environments
-   - `common/<common>`: Common Terraform ~resources~ used across environments.
+   - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
+   - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 
 ## Makefile
 

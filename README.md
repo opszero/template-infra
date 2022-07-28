@@ -1,6 +1,6 @@
 # Infra
 
-![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)
+[![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)](https://github.com/opszero/template-infra)
 ![GitHub Issues](https://img.shields.io/github/issues/opszero/template-infra)
 
 opsZero uses Infrastructure as Code to build all infrastructure. The directory

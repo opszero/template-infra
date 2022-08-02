@@ -36,6 +36,13 @@ opsZero support:
    - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
    - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 
+# Tools & Setup
+
+```
+brew install kubectl kubernetes-helm awscli terraform
+```
+
+
 ## Makefile
 
  - `make fmt`: Run `terraform fmt`

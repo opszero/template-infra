@@ -71,4 +71,5 @@ module "users" {
         "Admin"
       ]
     }
+  }
 }

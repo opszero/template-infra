@@ -69,6 +69,7 @@ module "users" {
     "opszero" = {
       groups = [
         "Admin"
-      ]
-    }
+       ]
+     }
+   }
 }

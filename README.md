@@ -22,8 +22,6 @@ opsZero support:
    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
- - `secrets`: Store and manage secrets.
-   - `ssm`: Store secrets in AWS Systems Manager Parameter Store
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
    - `<environment>`: Individual environments. e.g prod, dev, staging.
      - Bastion

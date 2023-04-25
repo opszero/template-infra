@@ -18,8 +18,10 @@ opsZero support:
 
  - `edge`: DNS and Cloudflare Access
    - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
- - `iam`: Setup Cloud level IAM and Access.
-   - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
+ - `identity`: 
+   - `github`: Setup Github level IAM and Access
+   - `iam`: Setup Cloud level IAM and Access.
+     - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
  - `monitoring`: Monitoring configuration
    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon): Datadog powered panopticon.
  - `environments`: Cloud Kubernetes Clusters, Common Cloud Terraform, Shared Terraform
@@ -28,8 +30,6 @@ opsZero support:
        - [terraform-aws-bastion](https://github.com/opszero/terraform-aws-bastion). AWS Bastion / Instance with EC2 Instance Connect
      - Kubernetes
        - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot). AWS Configuration
-       - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot). GCP configuration.
-       - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot). Azure configuration.
        - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot). Common Helm Charts.
    - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
    - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR

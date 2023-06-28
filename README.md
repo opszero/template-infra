@@ -16,7 +16,7 @@ opsZero support:
 
 ## Structure
 
-- `edge`: DNS and Cloudflare Access
+- `dns`: DNS and Cloudflare Access
   - [terraform-cloudflare-edge](https://github.com/opszero/terraform-aws-mrmgr). Configure IAM resources including Github OIDC, Gitlab OIDC, and IAM.
 - `identity`:
   - Setting up

@@ -32,6 +32,14 @@ opsZero support:
   - `shared/<shared>`: Shared Terraform ~modules~ used by environments. e.g S3 Bucket configuration
   - `common/<common>`: Common Terraform ~resources~ used across environments. e.g ECR
 
+
+# Compliance
+
+ - AWS
+   - `common/compliance`
+     - `cloudtrail_enabled = true`: Add Cloudtrail for the AWS regions.
+
+
 # Tools & Setup
 
 ```

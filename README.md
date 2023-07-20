@@ -35,9 +35,14 @@ opsZero support:
 
 # Compliance
 
- - AWS
+To enable the compliance for SOC2, CMMC, HIPAA, ITAR, PCI-DSS please follow the following:
+
+ - AWS module
    - `common/compliance`
      - `cloudtrail_enabled = true`: Add Cloudtrail for the AWS regions.
+
+
+ - `bin/aws-log-group-retention-update.py --profile <account>`: Update the AWS Retention period to 365 days.
 
 
 # Tools & Setup

@@ -8,12 +8,6 @@ structure contains everything needed to run the entire Cloud infrastructure from
 DNS to IAM to the Cloud. The way different components are used is through
 different terraform modules.
 
-opsZero support:
-
-- [Docs](https://docs.opszero.com)
-- [Helpdesk](https://support.opszero.com)
-- Shared Slack
-
 ## Structure
 
 - `dns`: DNS and Cloudflare Access
@@ -35,12 +29,13 @@ opsZero support:
 
 # Compliance
 
-To enable the compliance for SOC2, CMMC, HIPAA, ITAR, PCI-DSS please follow the following:
+To enable the compliance for SOC2, CMMC, HIPAA, ITAR, PCI-DSS please follow the
+following:
 
  - AWS module
-   - `common/compliance`
-     - `cloudtrail_enabled = true`: Add Cloudtrail for the AWS regions.
-
+   - `environments/common/compliance/aws-cloudtrail`: Setup Cloudtrail.
+   - `environments/common/complaince/aws-elb`: Add monitoring to ELBs.
+   - `environments/common/compliance/aws-guardduty`: Enable the Intrusion Detection System.
 
  - `bin/aws-log-group-retention-update.py --profile <account> --region us-west-2`: Update the AWS Retention period to 365 days.
 

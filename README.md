@@ -42,7 +42,7 @@ To enable the compliance for SOC2, CMMC, HIPAA, ITAR, PCI-DSS please follow the 
      - `cloudtrail_enabled = true`: Add Cloudtrail for the AWS regions.
 
 
- - `bin/aws-log-group-retention-update.py --profile <account>`: Update the AWS Retention period to 365 days.
+ - `bin/aws-log-group-retention-update.py --profile <account> --region us-west-2`: Update the AWS Retention period to 365 days.
 
 
 # Tools & Setup

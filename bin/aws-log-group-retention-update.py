@@ -11,12 +11,15 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "--profile", "-p", required=True, help="The name of the AWS profile to use"
 )
+parser.add_argument(
+    "--region", "-e", required=True, help="The name of the AWS profile to use"
+)
 
 # Parse the command-line arguments
 args = parser.parse_args()
 
 # Initialize the CloudWatch Logs client with the specified profile
-session = boto3.Session(profile_name=args.profile)
+session = boto3.Session(profile_name=args.profile, region_name=args.region)
 client = session.client("logs")
 
 log_groups = client.describe_log_groups()

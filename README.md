@@ -53,15 +53,15 @@ brew install kubectl kubernetes-helm awscli terraform azure-cli
 
 ## Modules
 
- - [DevOps](https://github.com/opszero/DevOps)
-   - [Github Actions](https://github.com/opszero/Github Actions)
+ - DevOps
+   - Github Actions
     - [actions-cloudflare-dns](https://github.com/opszero/actions-cloudflare-dns)
     - [actions-deploytag](https://github.com/opszero/actions-deploytag)
     - [actions-deploytag-cleanup](https://github.com/opszero/actions-deploytag-cleanup)
     - [flowtune](https://github.com/opszero/flowtune)
     - [flowtune-runner-images](https://github.com/opszero/flowtune-runner-images)
     - [tiphys](https://github.com/opszero/tiphys)
-   - [ Cloud](https://github.com/opszero/ Cloud)
+   - Cloud
     - [wintune](https://github.com/opszero/wintune)
     - [nixtune](https://github.com/opszero/nixtune)
     - [opshell](https://github.com/opszero/opshell)
@@ -85,15 +85,14 @@ brew install kubectl kubernetes-helm awscli terraform azure-cli
     - [terraform-template](https://github.com/opszero/terraform-template)
     - [terraform-azuread-mrmgr](https://github.com/opszero/terraform-azuread-mrmgr)
     - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot)
-   - [Google](https://github.com/opszero/Google)
     - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot)
     - [terraform-google-mrmgr](https://github.com/opszero/terraform-google-mrmgr)
-  - [DataOps](https://github.com/opszero/DataOps)
-    - [airbase](https://github.com/opszero/airbase)
-    - [terraform-aws-airflow](https://github.com/opszero/terraform-aws-airflow)
-  - [Workflows](https://github.com/opszero/Workflows)
-    - [template-aws-lambda-django](https://github.com/opszero/template-aws-lambda-django)
-    - [template-aws-lambda-flask](https://github.com/opszero/template-aws-lambda-flask)
-    - [template-azure-functions-django](https://github.com/opszero/template-azure-functions-django)
-    - [template-helm-django](https://github.com/opszero/template-helm-django)
-    - [template-helm-jupyter-voila](https://github.com/opszero/template-helm-jupyter-voila)
+ - [DataOps](https://github.com/opszero/DataOps)
+  - [airbase](https://github.com/opszero/airbase)
+  - [terraform-aws-airflow](https://github.com/opszero/terraform-aws-airflow)
+ - [Workflows](https://github.com/opszero/Workflows)
+  - [template-aws-lambda-django](https://github.com/opszero/template-aws-lambda-django)
+  - [template-aws-lambda-flask](https://github.com/opszero/template-aws-lambda-flask)
+  - [template-azure-functions-django](https://github.com/opszero/template-azure-functions-django)
+  - [template-helm-django](https://github.com/opszero/template-helm-django)
+  - [template-helm-jupyter-voila](https://github.com/opszero/template-helm-jupyter-voila)

@@ -87,10 +87,10 @@ brew install kubectl kubernetes-helm awscli terraform azure-cli
      - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot)
      - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot)
      - [terraform-google-mrmgr](https://github.com/opszero/terraform-google-mrmgr)
- - [DataOps](https://github.com/opszero/DataOps)
+ - DataOps
    - [airbase](https://github.com/opszero/airbase)
    - [terraform-aws-airflow](https://github.com/opszero/terraform-aws-airflow)
- - [Workflows](https://github.com/opszero/Workflows)
+ - Workflows
    - [template-aws-lambda-django](https://github.com/opszero/template-aws-lambda-django)
    - [template-aws-lambda-flask](https://github.com/opszero/template-aws-lambda-flask)
    - [template-azure-functions-django](https://github.com/opszero/template-azure-functions-django)

@@ -48,9 +48,8 @@ module "users" {
 
   github = {
     "deployer" = {
-      org = ""
       repos = [
-        "reponame"
+        "org/repo-name",
       ]
       policy_arns = [aws_iam_policy.deployer.arn]
     }

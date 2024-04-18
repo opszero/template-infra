@@ -3,16 +3,16 @@ provider "aws" {
   region  = "us-west-2"
 }
 
-terraform {
-  backend "s3" {
-    bucket  = "opszero-<profile>-terraform-tfstate"
-    region  = "us-east-1"
-    profile = "<profile>"
-    encrypt = "true"
+# terraform {
+#   backend "s3" {
+#     bucket  = "opszero-<profile>-terraform-tfstate"
+#     region  = "us-east-1"
+#     profile = "<profile>"
+#     encrypt = "true"
 
-    key = "iam"
-  }
-}
+#     key = "iam"
+#   }
+# }
 
 resource "aws_iam_policy" "deployer" {
   name        = "github-deployer-policy"
@@ -49,9 +49,11 @@ module "users" {
   github = {
     "deployer" = {
       repos = [
-        "org/repo-name",
+        "opszero/terraform-aws-mrmgr"
       ]
-      policy_arns = [aws_iam_policy.deployer.arn]
+      policy_arns = [
+        aws_iam_policy.deployer.arn
+      ]
     }
   }
 

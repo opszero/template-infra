@@ -21,5 +21,5 @@ for account in response["Accounts"]:
     aid = account["Id"]
     print("[" + account["Name"] + "]")
     print(f"role_arn = arn:aws:iam::{aid}:role/OrganizationAccountAccessRole")
-    print("source_profile = auguria-infra")
+    print("source_profile = mainprofile")
     print()

@@ -2,7 +2,7 @@ import argparse
 
 import boto3
 
-RETENTION_PERIOD = 14
+RETENTION_PERIOD = 365
 
 # Define the command-line arguments
 parser = argparse.ArgumentParser(

@@ -1,0 +1,10 @@
+[project]
+name = "template-infra"
+version = "0.1.0"
+requires-python = ">=3.11.3"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "invoke>=3.0.3",
+]

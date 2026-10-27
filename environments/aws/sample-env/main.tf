@@ -25,7 +25,7 @@ provider "helm" {
 
 locals {
   environment_name = "sample"
-  legacy_vpc_id = ""
+  legacy_vpc_id    = ""
 }
 
 module "opszero-eks" {
@@ -47,8 +47,8 @@ module "opszero-eks" {
     admin_roles = [
       "arn:aws:iam::12345:role/github-deployer",
     ]
-    readonly_roles = []
-    dev_roles = []
+    readonly_roles   = []
+    dev_roles        = []
     monitoring_roles = []
   }
 

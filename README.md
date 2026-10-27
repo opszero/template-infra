@@ -117,11 +117,11 @@ flowchart LR
     nginx --> appsvc
 ```
 
-## Identity (MrMgr)
+## Identity
 
 ```mermaid
 flowchart TB
-    mrmgr["MrMgr"]
+    identity["Identity"]
 
     subgraph microsoft["Microsoft"]
         subgraph azure["Azure"]
@@ -169,7 +169,7 @@ flowchart TB
         end
     end
 
-    mrmgr --> ad
+    identity --> ad
     ad --> m365
     ad --> intune
     intune --> windows & linux & ios & mac & android
@@ -204,49 +204,3 @@ brew install kubectl kubernetes-helm awscli terraform azure-cli
 Tasks are defined in `tasks.py` using [invoke](https://www.pyinvoke.org/). Run `uv sync` first.
 
 - `uv run invoke fmt`: Run `terraform fmt`
-
-## Modules
-
-- DevOps
-  - Github Actions
-    - [actions-cloudflare-dns](https://github.com/opszero/actions-cloudflare-dns)
-    - [actions-deploytag](https://github.com/opszero/actions-deploytag)
-    - [actions-deploytag-cleanup](https://github.com/opszero/actions-deploytag-cleanup)
-    - [flowtune](https://github.com/opszero/flowtune)
-    - [flowtune-runner-images](https://github.com/opszero/flowtune-runner-images)
-    - [tiphys](https://github.com/opszero/tiphys)
-  - Cloud
-    - [wintune](https://github.com/opszero/wintune)
-    - [nixtune](https://github.com/opszero/nixtune)
-    - [opshell](https://github.com/opszero/opshell)
-    - [terraform-aws-cloudflare-security-group](https://github.com/opszero/terraform-aws-cloudflare-security-group)
-    - [terraform-aws-eks-efs](https://github.com/opszero/terraform-aws-eks-efs)
-    - [terraform-aws-elb-cloudwatch](https://github.com/opszero/terraform-aws-elb-cloudwatch)
-    - [terraform-aws-github-security-group](https://github.com/opszero/terraform-aws-github-security-group)
-    - [terraform-aws-instance](https://github.com/opszero/terraform-aws-instance)
-    - [terraform-aws-kubespot](https://github.com/opszero/terraform-aws-kubespot)
-    - [terraform-aws-mongodbatlas](https://github.com/opszero/terraform-aws-mongodbatlas)
-    - [terraform-aws-mrmgr](https://github.com/opszero/terraform-aws-mrmgr)
-    - [terraform-aws-rds-cross-region-backup](https://github.com/opszero/terraform-aws-rds-cross-region-backup)
-    - [terraform-aws-redshift](https://github.com/opszero/terraform-aws-redshift)
-    - [terraform-aws-ssm](https://github.com/opszero/terraform-aws-ssm)
-    - [terraform-cloudflare-domain](https://github.com/opszero/terraform-cloudflare-domain)
-    - [terraform-datadog-panopticon](https://github.com/opszero/terraform-datadog-panopticon)
-    - [terraform-github-mrmgr](https://github.com/opszero/terraform-github-mrmgr)
-    - [terraform-helm-aws-vault](https://github.com/opszero/terraform-helm-aws-vault)
-    - [terraform-helm-kubespot](https://github.com/opszero/terraform-helm-kubespot)
-    - [terraform-kubernetes-socat](https://github.com/opszero/terraform-kubernetes-socat)
-    - [terraform-template](https://github.com/opszero/terraform-template)
-    - [terraform-azuread-mrmgr](https://github.com/opszero/terraform-azuread-mrmgr)
-    - [terraform-azurerm-kubespot](https://github.com/opszero/terraform-azurerm-kubespot)
-    - [terraform-google-kubespot](https://github.com/opszero/terraform-google-kubespot)
-    - [terraform-google-mrmgr](https://github.com/opszero/terraform-google-mrmgr)
-- DataOps
-  - [airbase](https://github.com/opszero/airbase)
-  - [terraform-aws-airflow](https://github.com/opszero/terraform-aws-airflow)
-- Workflows
-  - [template-aws-lambda-django](https://github.com/opszero/template-aws-lambda-django)
-  - [template-aws-lambda-flask](https://github.com/opszero/template-aws-lambda-flask)
-  - [template-azure-functions-django](https://github.com/opszero/template-azure-functions-django)
-  - [template-helm-django](https://github.com/opszero/template-helm-django)
-  - [template-helm-jupyter-voila](https://github.com/opszero/template-helm-jupyter-voila)

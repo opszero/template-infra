@@ -1,12 +1,11 @@
-# Infra (Template)
+# opsZero (Template)
 
 [![GitHub](https://img.shields.io/github/stars/opszero/template-infra?style=social)](https://github.com/opszero/template-infra)
 ![GitHub Issues](https://img.shields.io/github/issues/opszero/template-infra)
 
-opsZero uses Infrastructure as Code to build all infrastructure. The directory
-structure contains everything needed to run the entire Cloud infrastructure from
-DNS to IAM to the Cloud. The way different components are used is through
-different terraform modules.
+opsZero's template repo. The directory structure contains everything needed to
+run the entire Cloud infrastructure from DNS to IAM to the Cloud. The way
+different components are used is through different terraform modules.
 
 ## Structure
 
